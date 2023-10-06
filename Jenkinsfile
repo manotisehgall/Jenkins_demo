@@ -7,7 +7,7 @@ pipeline{
     }
     agent any
         stages{
-            stage('clone'){
+            stage('Clone'){
                 steps{
                     git branch: 'master', credentialsId: 'github', url: 'https://github.com/manotisehgall/Jenkins_demo.git'
                 }
